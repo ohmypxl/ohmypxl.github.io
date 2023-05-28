@@ -34,10 +34,10 @@ function toggleMode(mode) {
 	for(var i=0; i < links.length; i++) {
 		if(links[i].href) {
 			links[i].style.color = mode === "light" ? "#0d1117" : "#ffffff";
-			links[i].style.transition = "2s";
+			links[i].style.transition = "1.2s";
 		}
 	}
-	document.body.style.transition = "2s";
+	document.body.style.transition = "1.2s";
 }
 
 // Event listener
