@@ -4,16 +4,33 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Pxlrl Redirect Discord</title>
-		<meta name="Description" content="Redirecting you to discord Genesis Roleplay.">
+		<meta name="Description" content="Website redirector to discord invite link Genesis Roleplay.">
 		<meta property="og:url" content="https://pxlrl.github.io">
 		<meta property="og:title" content="Pixlrl Discord Redirector">
-		<meta property="og:description" content="Redirecting you to discord Genesis Roleplay.">
+		<meta property="og:description" content="Website redirector to discord invite link Genesis Roleplay.">
 		<meta property="og:image" content="https://cdn.discordapp.com/attachments/1100820131610906745/1112229251186442290/icon.png">
 		<meta content="#6bdfe5" data-react-helmet="true" name="theme-color" />
 		<!-- Redirect metadata -->
 		<meta http-equiv="refresh" content="3; URL=https://discord.gg/u9R8sUNzNy">
-		<link href="../components/css/styles.min.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/svg+xml" href="../components/icons/icon.svg" sizes="any">
+		<link rel="stylesheet" type="text/css" href="../components/css/styles.min.css">
 		<link rel="canonical" href="https://discord.gg/u9R8sUNzNy">
+		<script>
+		const mode = localStorage.getItem("toggle-mode");
+		
+		if (mode === "light") {
+			document.body.classList.add("lightmode");
+		} else {
+			document.body.classList.remove("lightmode");
+		}
+
+		var links = document.getElementsByTagName("a");
+		for(var i=0; i < links.length; i++) {
+			if(links[i].href) {
+				links[i].style.color = mode === "light" ? "#0d1117" : "#ffffff"; 
+			}
+		}
+		</script>
 	</head>
 	<body>
 		<h1>Tunggu sebentar...</h1>
